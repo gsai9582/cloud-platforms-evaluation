@@ -1,16 +1,78 @@
-# React + Vite
+# Cloud Computing Platforms Evaluation Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive benchmarking dashboard and analytical evaluation comparing the major cloud infrastructure providers: **Amazon Web Services (AWS)**, **Microsoft Azure**, and **Google Cloud Platform (GCP)**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🎯 Project Overview
 
-## React Compiler
+This application serves as an architectural decision matrix and visual dashboard for engineering teams to evaluate cloud platforms based on compute efficiency, storage options, security compliance, pricing tiers, and DevOps integration.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+For the full comparative analysis document, see [**`CLOUD_ANALYSIS_REPORT.md`**](./CLOUD_ANALYSIS_REPORT.md).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+- **Interactive Comparison Matrix:** Filter and compare compute instances, managed Kubernetes engines (EKS, AKS, GKE), and serverless offerings.
+- **Cost & SLA Visualizer:** Side-by-side cost projections and SLA compliance metrics.
+- **Dynamic Metrics Filtering:** Toggle between developer tooling, AI/ML APIs, and enterprise compliance standards.
+- **Modern Responsive UI:** Built with React 18, Vite, and Tailwind-inspired responsive CSS.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React 18, Vite
+- **Styling:** Modular Modern CSS
+- **Data Architecture:** Structured JSON datasets (`src/data/cloud-data.js`)
+- **Linting & Code Quality:** ESLint
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/gsai9582/cloud-platforms-evaluation.git
+   cd cloud-platforms-evaluation
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Launch development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser at `http://localhost:5173`.
+
+### Production Build
+```bash
+npm run build
+npm run preview
+```
+
+---
+
+## 📊 Summary Evaluation Matrix
+
+| Capability | AWS | Microsoft Azure | Google Cloud (GCP) |
+|---|---|---|---|
+| **Market Maturity** | Pioneer / Largest Ecosystem | Deep Enterprise & Windows Integration | Leader in Data, AI & Kubernetes |
+| **Containers** | Amazon EKS / ECS | Azure Kubernetes Service (AKS) | Google Kubernetes Engine (GKE) |
+| **Serverless** | AWS Lambda | Azure Functions | Google Cloud Functions / Cloud Run |
+| **AI / ML** | Amazon SageMaker, Bedrock | Azure OpenAI, Cognitive Services | Vertex AI, Gemini Models |
+
+---
+
+## 📄 License
+MIT License.
